@@ -23,7 +23,7 @@ def predict():
 
 if __name__ == '__main__':
     
-    reg = p.load(open('../data/pipline.pickle', 'rb')) #if not in docker image use this line and comment out line below
+    reg = p.load(open('data/pipline.pickle', 'rb')) #if not in docker image use this line and comment out line below
     #reg = p.load(open('pipline.pickle', 'rb'))
     print('model loaded')
     app.run(host='0.0.0.0',port=5000)

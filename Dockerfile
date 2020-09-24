@@ -6,4 +6,4 @@ RUN pip install -r requirements.txt
 COPY notebooks/app.py .notebooks/
 COPY data/pipline.pickle .data/
 EXPOSE 5000
-CMD ["python", "data/app.py"]
+CMD ["python", "notebooks/app.py"]

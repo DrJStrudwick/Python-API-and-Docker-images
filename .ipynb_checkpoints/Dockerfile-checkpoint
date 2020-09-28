@@ -3,7 +3,7 @@ WORKDIR code/
 COPY requirements.txt .
 RUN pip3 -q install pip --upgrade
 RUN pip install -r requirements.txt
-COPY notebooks/app.py notebooks/
+COPY app.py .
 COPY data/pipline.pickle data/
 EXPOSE 5000
-CMD ["python", "notebooks/app.py"]
+CMD ["python", "app.py"]
